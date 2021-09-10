@@ -1,0 +1,18 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.8.5",
+    "heartbeatAt": "2021-09-10T18:03:46.724901",
+    "startedAt": "2021-09-10T18:03:41.056383",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1050 Ti",
+    "gpu_count": 1,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "host": "DESKTOP-RMRLC69",
+    "username": "alexd",
+    "executable": "C:\\ProgramData\\Anaconda3\\python.exe"
+}

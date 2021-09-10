@@ -1,0 +1,215 @@
+
+  0%|                                                                                                                                                                                                                                      | 0/5421 [00:00<?, ?it/s]
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+
+
+  0%|▋                                                                                                                                                                                                                            | 16/5421 [00:04<11:45,  7.66it/s]
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+
+
+  1%|█▋                                                                                                                                                                                                                           | 42/5421 [00:08<16:17,  5.50it/s]
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+
+
+  1%|██▎                                                                                                                                                                                                                          | 56/5421 [00:12<45:23,  1.97it/s]
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+
+  1%|██▊                                                                                                                                                                                                                          | 69/5421 [00:14<11:30,  7.76it/s]
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>
+Actual class: bewickii, Predicted class: bewickii
+(3, 16000, 1)
+<class 'numpy.ndarray'>

@@ -1,0 +1,24 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.8.5",
+    "heartbeatAt": "2021-09-06T20:41:47.966439",
+    "startedAt": "2021-09-06T20:41:43.782526",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1050 Ti",
+    "gpu_count": 1,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "predict.py",
+    "codePath": "predict.py",
+    "git": {
+        "remote": "https://github.com/seth814/Audio-Classification.git",
+        "commit": "2aca6936241ce4273e9acc02d738e029433aa9ec"
+    },
+    "email": "alexdim.liak@gmail.com",
+    "root": "C:/Users/alexd/Documents/AIDLProjects/AIDL_02_NeuralNetworks/Audio-Classification",
+    "host": "DESKTOP-RMRLC69",
+    "username": "alexd",
+    "executable": "C:\\ProgramData\\Anaconda3\\python.exe"
+}

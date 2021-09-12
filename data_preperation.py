@@ -1,20 +1,3 @@
-# torchaudio provides audio and music analysis on Python
-# !pip install torchaudio librosa boto3  # Run only once
-# !pip install wavio  # Run only once
-# !pip install tensorflow  # Run only once
-# Kapre implements time-frequency conversions, normalisation,  and data augmentation as Keras layers
-# !pip install kapre  # Run only once
-
-# Notes:
-#  Data set : https://www.kaggle.com/vinayshanbhag/bird-song-data-set?select=bird_songs_metadata.csv
-# ??  https://pytorch.org/tutorials/beginner/audio_preprocessing_tutorial.html
-# (Audio Preprocessing Layers for a Quick Implementation ofDeep Neural Network Models with Keras) chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/https://arxiv.org/pdf/1706.05781.pdf
-#  https://keras.io/about/
-#  https://pysoundfile.readthedocs.io/en/latest/
-# KAPRE library : https://github.com/keunwoochoi/kapre/blob/master/kapre/time_frequency.py
-# wandg report https://wandb.ai/skycladai/bird-classification/reports/Bird-Classification-Report--Vmlldzo5ODg1NjI
-
-
 import matplotlib.pyplot as plt
 from scipy.io import wavfile
 import soundfile as sf
@@ -183,5 +166,5 @@ if __name__ == '__main__':  # (Run it 3 times)
     args, _ = parser.parse_known_args()
 
     # comment out after use
-    # test_threshold(args) # (2nd run)
+    # test_threshold(args)  # (2nd run)
     split_wavs(args)  # (3rd run)

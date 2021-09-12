@@ -84,10 +84,12 @@ def train(args):
     wav_paths = glob('{}/**'.format(src_root), recursive=True)
     wav_paths = [x.replace(os.sep, '/') for x in wav_paths if '.wav' in x]
     classes = sorted(os.listdir(args.src_root))
+    # LabelEncoder: Transforms the name of species into simple integers
     le = LabelEncoder()
     le.fit(classes)
     labels = [os.path.split(x)[0].split('/')[-1] for x in wav_paths]
     labels = le.transform(labels)
+    # We are spliting our data (the wav files) into shuffle test(10%) and train(90%)
     wav_train, wav_val, label_train, label_val = train_test_split(wav_paths,
                                                                   labels,
                                                                   test_size=0.1,

@@ -1,5 +1,5 @@
 from tensorflow.keras.models import load_model
-from clean import downsample_mono, envelope
+from data_preperation import downsample_mono, envelope
 from kapre.time_frequency import STFT, Magnitude, ApplyFilterbank, MagnitudeToDecibel
 from sklearn.preprocessing import LabelEncoder
 import numpy as np
@@ -8,15 +8,6 @@ import argparse
 import os
 import pandas as pd
 from tqdm import tqdm
-
-import wandb
-from wandb.keras import WandbCallback
-# Start a new run
-wandb.init(project='bird-classification-prediction', entity='skycladai')
-
-# Save model inputs and hyperparameters
-config = wandb.config
-config.learning_rate = 0.01
 
 
 def make_prediction(args):

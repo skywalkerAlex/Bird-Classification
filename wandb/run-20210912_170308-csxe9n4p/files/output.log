@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "train.py", line 137, in <module>
+    train(args)
+  File "train.py", line 118, in train
+    callbacks=[csv_logger, cp, WandbCallback()])
+  File "C:\ProgramData\Anaconda3\lib\site-packages\wandb\integration\keras\keras.py", line 430, in __init__
+    previous_best = wandb.run.summary.get(
+  File "C:\ProgramData\Anaconda3\lib\site-packages\wandb\sdk\wandb_summary.py", line 34, in get
+    return self._as_dict().get(key, default)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\wandb\sdk\wandb_summary.py", line 127, in _as_dict
+    return self._get_current_summary_callback()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\wandb\sdk\wandb_run.py", line 859, in _summary_get_current_summary_callback
+    return proto_util.dict_from_proto_list(ret.item)
+AttributeError: 'NoneType' object has no attribute 'item'

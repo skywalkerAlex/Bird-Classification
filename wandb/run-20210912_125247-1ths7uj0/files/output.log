@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "train.py", line 136, in <module>
+    train(args)
+  File "train.py", line 79, in train
+    models = {'conv1d': Conv1D(**params),
+  File "C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\models.py", line 30, in Conv1D
+    x = layers.MaxPooling1D(pool_size=(2, 2), name='max_pool_2d_1')(x)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\keras\layers\pooling.py", line 187, in __init__
+    super(MaxPooling1D, self).__init__(
+  File "C:\ProgramData\Anaconda3\lib\site-packages\keras\layers\pooling.py", line 59, in __init__
+    self.pool_size = conv_utils.normalize_tuple(pool_size, 1, 'pool_size')
+  File "C:\ProgramData\Anaconda3\lib\site-packages\keras\utils\conv_utils.py", line 74, in normalize_tuple
+    raise ValueError('The `' + name + '` argument must be a tuple of ' +
+ValueError: The `pool_size` argument must be a tuple of 1 integers. Received: (2, 2)

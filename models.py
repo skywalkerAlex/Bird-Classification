@@ -2,10 +2,12 @@ from tensorflow.keras import layers
 from tensorflow.keras.layers import TimeDistributed, LayerNormalization
 from tensorflow.keras.models import Model
 from tensorflow.keras.regularizers import l2
-import kapre
 from kapre.composed import get_melspectrogram_layer
 import tensorflow as tf
 import os
+
+# Convolution applies a filter (multiplication of a set of weights) in the input (audio wav files)
+#
 
 
 def Conv1D(N_CLASSES=10, SR=16000, DT=1.0):
@@ -20,31 +22,42 @@ def Conv1D(N_CLASSES=10, SR=16000, DT=1.0):
                                  return_decibel=True,
                                  input_data_format='channels_last',
                                  output_data_format='channels_last')
+    # Normalize the filter applies of the previous layer for each given example in each batch
     x = LayerNormalization(axis=2, name='batch_norm')(i.output)
+    # TimeDistributed applies a layer on each batch.
+    # ReLu(rectified linear activation function) is a linear function that will output the input directly if it is positive, otherwise, it will output zero.
+    # Has better performance.
     x = TimeDistributed(layers.Conv1D(16, kernel_size=(
         4), activation='relu'), name='td_conv_1d_relu_1')(x)
-    x = layers.MaxPooling2D(pool_size=(2, 2), name='max_pool_2d_2')(x)
+    # MaxPooling2D: Downsamples the input along its spatial dimensions by taking the maximum value over an input window (pool_size) for each channel of the input.
+    # The window is shifted by strides along each dimension.
+    x = layers.MaxPooling2D(pool_size=(2, 2), name='max_pool_2d_1')(x)
 
     x = TimeDistributed(layers.Conv1D(32, kernel_size=(
         4), activation='relu'), name='td_conv_1d_relu_2')(x)
-    x = layers.MaxPooling2D(pool_size=(2, 2), name='max_pool_2d_3')(x)
+    x = layers.MaxPooling2D(pool_size=(2, 2), name='max_pool_2d_2')(x)
 
     x = TimeDistributed(layers.Conv1D(64, kernel_size=(
         4), activation='relu'), name='td_conv_1d_relu_3')(x)
-    x = layers.MaxPooling2D(pool_size=(2, 2), name='max_pool_2d_4')(x)
+    x = layers.MaxPooling2D(pool_size=(2, 2), name='max_pool_2d_3')(x)
 
     x = TimeDistributed(layers.Conv1D(128, kernel_size=(
         4), activation='relu'), name='td_conv_1d_relu_4')(x)
-    x = layers.MaxPooling2D(pool_size=(2, 2), name='max_pool_2d_5')(x)
+    x = layers.MaxPooling2D(pool_size=(2, 2), name='max_pool_2d_4')(x)
 
     x = TimeDistributed(layers.Conv1D(256, kernel_size=(
         4), activation='relu'), name='td_conv_1d_relu_5')(x)
+    # MaxPooling for the whole batch
     x = layers.GlobalMaxPooling2D(name='global_max_pooling_2d')(x)
-
+    # Dropout layer randomly sets input units to 0 with a frequency of rate ( scaled up by 1/(1 - rate) ) at each step during training time,
+    # which helps prevent overfitting.
+    # Dropout only applies when training is set to True such that no values are dropped during inference.
     x = layers.Dropout(rate=0.1, name='dropout')(x)
-
+    # Dense implements the activation specified. Here is 'relu'
     x = layers.Dense(64, activation='relu',
                      activity_regularizer=l2(0.001), name='dense')(x)
+    # SoftMax is a generalization of the logistic function to multiple dimensions.
+    # Is used to normalize the output to a probability distribution over predicted output classes
     o = layers.Dense(N_CLASSES, activation='softmax', name='softmax')(x)
 
     model = Model(inputs=i.input, outputs=o, name='1d_convolution')
@@ -71,21 +84,21 @@ def Conv2D(N_CLASSES=10, SR=16000, DT=1.0):
     x = layers.Conv2D(16, kernel_size=(5, 5), activation='relu',
                       padding='same', name='conv2d_relu_1')(x)
     x = layers.MaxPooling2D(pool_size=(
-        2, 2), padding='same', name='max_pool_2d_2')(x)
+        2, 2), padding='same', name='max_pool_2d_1')(x)
 
     x = layers.Conv2D(32, kernel_size=(3, 3), activation='relu',
                       padding='same', name='conv2d_relu_2')(x)
     x = layers.MaxPooling2D(pool_size=(
-        2, 2), padding='same', name='max_pool_2d_3')(x)
+        2, 2), padding='same', name='max_pool_2d_2')(x)
 
     x = layers.Conv2D(64, kernel_size=(3, 3), activation='relu',
                       padding='same', name='conv2d_relu_3')(x)
     x = layers.MaxPooling2D(pool_size=(
-        2, 2), padding='same', name='max_pool_2d_4')(x)
+        2, 2), padding='same', name='max_pool_2d_3')(x)
 
     x = layers.Conv2D(128, kernel_size=(3, 3), activation='relu',
                       padding='same', name='conv2d_relu_4')(x)
-
+    # Flatten layers are used when you got a multidimensional output and you want to make it linear to pass it onto a Dense layer
     x = layers.Flatten(name='flatten')(x)
     x = layers.Dropout(rate=0.2, name='dropout')(x)
 
@@ -102,6 +115,9 @@ def Conv2D(N_CLASSES=10, SR=16000, DT=1.0):
 
 
 def LSTM(N_CLASSES=10, SR=16000, DT=1.0):
+    # Long Short-Term Memory layer is a Recurrent neural networks (RNN are a class of neural networks that is powerful for modeling sequence data such as time series)
+    # this layer will choose different implementations (cuDNN-based or pure-TensorFlow) to maximize the performance.
+    # If a GPU is available and all the arguments to the layer meet the requirement of the CuDNN kernel, the layer will use a fast cuDNN implementation.
     input_shape = (int(SR*DT), 1)
     i = get_melspectrogram_layer(input_shape=input_shape,
                                  n_mels=128,
@@ -119,7 +135,7 @@ def LSTM(N_CLASSES=10, SR=16000, DT=1.0):
     x = TimeDistributed(layers.Reshape((-1,)), name='reshape')(x)
     s = TimeDistributed(layers.Dense(64, activation='tanh'),
                         name='td_dense_tanh')(x)
-
+    # default is linear activation
     x = layers.Bidirectional(layers.LSTM(32, return_sequences=True),
                              name='bidirectional_lstm')(s)
 
@@ -128,8 +144,8 @@ def LSTM(N_CLASSES=10, SR=16000, DT=1.0):
     x = layers.MaxPooling1D(name='max_pool_1d')(x)
 
     x = layers.Dense(32, activation='relu', name='dense_2_relu')(x)
-    x = layers.Flatten(name='flatten')(x)
 
+    x = layers.Flatten(name='flatten')(x)
     x = layers.Dropout(rate=0.2, name='dropout')(x)
     x = layers.Dense(32, activation='relu',
                      activity_regularizer=l2(0.001),

@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "train.py", line 136, in <module>
+    train(args)
+  File "train.py", line 79, in train
+    models = {'conv1d': Conv1D(**params),
+  File "C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\models.py", line 30, in Conv1D
+    x = layers.MaxPooling1D(pool_size=(2), name='max_pool_2d_1')(x)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\keras\engine\base_layer.py", line 976, in __call__
+    return self._functional_construction_call(inputs, args, kwargs,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\keras\engine\base_layer.py", line 1114, in _functional_construction_call
+    outputs = self._keras_tensor_symbolic_call(
+  File "C:\ProgramData\Anaconda3\lib\site-packages\keras\engine\base_layer.py", line 848, in _keras_tensor_symbolic_call
+    return self._infer_output_signature(inputs, args, kwargs, input_masks)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\keras\engine\base_layer.py", line 886, in _infer_output_signature
+    self._maybe_build(inputs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\keras\engine\base_layer.py", line 2633, in _maybe_build
+    input_spec.assert_input_compatibility(
+  File "C:\ProgramData\Anaconda3\lib\site-packages\keras\engine\input_spec.py", line 214, in assert_input_compatibility
+    raise ValueError('Input ' + str(input_index) + ' of layer ' +
+ValueError: Input 0 of layer max_pool_2d_1 is incompatible with the layer: expected ndim=3, found ndim=4. Full shape received: (None, 100, 125, 16)

@@ -145,11 +145,9 @@ def test_threshold(args):
 
 def wav_assortment(dst_root):
     audio_csv = pd.read_csv('bird_songs_metadata.csv')
-    # print(audio_wav.shape)
-    # print(audio_wav.columns)
-    # print(audio_wav.dtypes)
-    # print(audio_wav.isnull().any())
+
     all_ids = audio_csv['id']
+    # arrange the wav files inside a folder with the name of species
     for idx, id in all_ids.iteritems():
         title = audio_csv['species'][idx]
         destination = dst_root+"/"+title
@@ -166,8 +164,8 @@ def wav_assortment(dst_root):
             os.remove(path_to_file)
 
 
-if __name__ == '__main__':
-    # wav_assortment("wavfiles") # Run only once
+if __name__ == '__main__':  # (Run it 3 times)
+    # wav_assortment("wavfiles") # Run only once. comment out after use (1st run)
     parser = argparse.ArgumentParser(description='Cleaning audio data')
     parser.add_argument('--src_root', type=str, default='wavfiles',
                         help='directory of audio files in total duration')
@@ -176,13 +174,14 @@ if __name__ == '__main__':
     parser.add_argument('--delta_time', '-dt', type=float, default=1.0,
                         help='time in seconds to sample audio')
     parser.add_argument('--sr', type=int, default=16000,
-                        help='rate to downsample audio')
+                        help='rate to downsample audio. 16000 is the number of samples taken per second')
 
     parser.add_argument('--fn', type=str, default='12577-0',
                         help='file to plot over time to check magnitude')
-    parser.add_argument('--threshold', type=str, default=100,
-                        help='threshold magnitude for np.int16 dtype')
+    parser.add_argument('--threshold', type=str, default=50,
+                        help='threshold magnitude for np.int16 dtype (with threshold to 50 creates more accurate filter)')
     args, _ = parser.parse_known_args()
 
-    # test_threshold(args)
-    split_wavs(args)
+    # comment out after use
+    # test_threshold(args) # (2nd run)
+    split_wavs(args)  # (3rd run)

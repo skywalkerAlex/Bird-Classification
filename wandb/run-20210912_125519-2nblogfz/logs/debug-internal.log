@@ -1,0 +1,114 @@
+2021-09-12 12:55:21,130 INFO    MainThread:14048 [internal.py:wandb_internal():86] W&B internal server running at pid: 14048, started at: 2021-09-12 12:55:21.127664
+2021-09-12 12:55:21,134 DEBUG   SenderThread:14048 [sender.py:send():182] send: header
+2021-09-12 12:55:21,135 INFO    WriterThread:14048 [datastore.py:open_for_write():77] open: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\run-2nblogfz.wandb
+2021-09-12 12:55:21,137 DEBUG   HandlerThread:14048 [handler.py:handle_request():126] handle_request: check_version
+2021-09-12 12:55:21,148 DEBUG   SenderThread:14048 [sender.py:send_request():196] send_request: check_version
+2021-09-12 12:55:21,369 DEBUG   SenderThread:14048 [sender.py:send():182] send: run
+2021-09-12 12:55:21,769 INFO    SenderThread:14048 [dir_watcher.py:__init__():169] watching files in: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files
+2021-09-12 12:55:21,769 INFO    SenderThread:14048 [sender.py:_start_run_threads():740] run started: 2nblogfz with start time 1631440519
+2021-09-12 12:55:21,769 DEBUG   SenderThread:14048 [sender.py:send():182] send: summary
+2021-09-12 12:55:21,770 DEBUG   HandlerThread:14048 [handler.py:handle_request():126] handle_request: run_start
+2021-09-12 12:55:21,770 INFO    SenderThread:14048 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-12 12:55:22,780 INFO    Thread-12 :14048 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\wandb-summary.json
+2021-09-12 12:55:23,571 DEBUG   HandlerThread:14048 [meta.py:__init__():40] meta init
+2021-09-12 12:55:23,571 DEBUG   HandlerThread:14048 [meta.py:__init__():54] meta init done
+2021-09-12 12:55:23,571 DEBUG   HandlerThread:14048 [meta.py:probe():211] probe
+2021-09-12 12:55:23,591 DEBUG   HandlerThread:14048 [meta.py:_setup_git():201] setup git
+2021-09-12 12:55:23,648 DEBUG   HandlerThread:14048 [meta.py:_setup_git():208] setup git done
+2021-09-12 12:55:23,648 DEBUG   HandlerThread:14048 [meta.py:_save_code():90] save code
+2021-09-12 12:55:23,674 DEBUG   HandlerThread:14048 [meta.py:_save_code():111] save code done
+2021-09-12 12:55:23,674 DEBUG   HandlerThread:14048 [meta.py:_save_patches():128] save patches
+2021-09-12 12:55:23,797 INFO    Thread-12 :14048 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\code\train.py
+2021-09-12 12:55:23,798 INFO    Thread-12 :14048 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\code
+2021-09-12 12:55:23,930 DEBUG   HandlerThread:14048 [meta.py:_save_patches():170] save patches done
+2021-09-12 12:55:23,930 DEBUG   HandlerThread:14048 [meta.py:_save_pip():58] save pip
+2021-09-12 12:55:23,931 DEBUG   HandlerThread:14048 [meta.py:_save_pip():72] save pip done
+2021-09-12 12:55:23,931 DEBUG   HandlerThread:14048 [meta.py:_save_conda():79] save conda
+2021-09-12 12:55:24,808 INFO    Thread-12 :14048 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\diff.patch
+2021-09-12 12:55:24,809 INFO    Thread-12 :14048 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\conda-environment.yaml
+2021-09-12 12:55:24,809 INFO    Thread-12 :14048 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\requirements.txt
+2021-09-12 12:55:26,841 INFO    Thread-12 :14048 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\output.log
+2021-09-12 12:55:27,856 INFO    Thread-12 :14048 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\output.log
+2021-09-12 12:55:30,167 WARNING MainThread:14048 [internal.py:wandb_internal():145] Internal process interrupt: 1
+2021-09-12 12:55:30,292 DEBUG   HandlerThread:14048 [meta.py:_save_conda():87] save conda done
+2021-09-12 12:55:30,292 DEBUG   HandlerThread:14048 [meta.py:probe():249] probe done
+2021-09-12 12:55:30,295 DEBUG   HandlerThread:14048 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-12 12:55:30,295 DEBUG   SenderThread:14048 [sender.py:send_request():196] send_request: stop_status
+2021-09-12 12:55:30,298 DEBUG   HandlerThread:14048 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-12 12:55:30,544 DEBUG   SenderThread:14048 [sender.py:send():182] send: config
+2021-09-12 12:55:30,544 DEBUG   SenderThread:14048 [sender.py:send():182] send: telemetry
+2021-09-12 12:55:30,544 DEBUG   SenderThread:14048 [sender.py:send():182] send: exit
+2021-09-12 12:55:30,544 INFO    SenderThread:14048 [sender.py:send_exit():291] handling exit code: 1
+2021-09-12 12:55:30,544 INFO    SenderThread:14048 [sender.py:send_exit():293] handling runtime: 8
+2021-09-12 12:55:30,545 INFO    SenderThread:14048 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-12 12:55:30,545 INFO    SenderThread:14048 [sender.py:send_exit():303] send defer
+2021-09-12 12:55:30,546 DEBUG   SenderThread:14048 [sender.py:send_request():196] send_request: poll_exit
+2021-09-12 12:55:30,546 DEBUG   SenderThread:14048 [sender.py:send():182] send: files
+2021-09-12 12:55:30,546 INFO    SenderThread:14048 [sender.py:_save_file():873] saving file wandb-metadata.json with policy now
+2021-09-12 12:55:30,547 DEBUG   HandlerThread:14048 [handler.py:handle_request():126] handle_request: defer
+2021-09-12 12:55:30,547 INFO    HandlerThread:14048 [handler.py:handle_request_defer():143] handle defer: 0
+2021-09-12 12:55:30,548 INFO    SenderThread:14048 [sender.py:_save_file():873] saving file code\train.py with policy now
+2021-09-12 12:55:30,548 INFO    SenderThread:14048 [sender.py:_save_file():873] saving file diff.patch with policy now
+2021-09-12 12:55:30,549 DEBUG   SenderThread:14048 [sender.py:send_request():196] send_request: defer
+2021-09-12 12:55:30,549 INFO    SenderThread:14048 [sender.py:send_request_defer():312] handle sender defer: 0
+2021-09-12 12:55:30,549 INFO    SenderThread:14048 [sender.py:transition_state():316] send defer: 1
+2021-09-12 12:55:30,549 DEBUG   HandlerThread:14048 [handler.py:handle_request():126] handle_request: defer
+2021-09-12 12:55:30,549 INFO    HandlerThread:14048 [handler.py:handle_request_defer():143] handle defer: 1
+2021-09-12 12:55:30,623 DEBUG   SenderThread:14048 [sender.py:send_request():196] send_request: defer
+2021-09-12 12:55:30,623 INFO    SenderThread:14048 [sender.py:send_request_defer():312] handle sender defer: 1
+2021-09-12 12:55:30,623 INFO    SenderThread:14048 [sender.py:transition_state():316] send defer: 2
+2021-09-12 12:55:30,623 DEBUG   SenderThread:14048 [sender.py:send():182] send: stats
+2021-09-12 12:55:30,623 DEBUG   HandlerThread:14048 [handler.py:handle_request():126] handle_request: defer
+2021-09-12 12:55:30,624 INFO    HandlerThread:14048 [handler.py:handle_request_defer():143] handle defer: 2
+2021-09-12 12:55:30,624 DEBUG   SenderThread:14048 [sender.py:send_request():196] send_request: defer
+2021-09-12 12:55:30,624 INFO    SenderThread:14048 [sender.py:send_request_defer():312] handle sender defer: 2
+2021-09-12 12:55:30,624 INFO    SenderThread:14048 [sender.py:transition_state():316] send defer: 3
+2021-09-12 12:55:30,624 DEBUG   HandlerThread:14048 [handler.py:handle_request():126] handle_request: defer
+2021-09-12 12:55:30,624 INFO    HandlerThread:14048 [handler.py:handle_request_defer():143] handle defer: 3
+2021-09-12 12:55:30,624 DEBUG   SenderThread:14048 [sender.py:send():182] send: summary
+2021-09-12 12:55:30,625 INFO    SenderThread:14048 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-12 12:55:30,625 DEBUG   SenderThread:14048 [sender.py:send_request():196] send_request: defer
+2021-09-12 12:55:30,625 INFO    SenderThread:14048 [sender.py:send_request_defer():312] handle sender defer: 3
+2021-09-12 12:55:30,625 INFO    SenderThread:14048 [sender.py:transition_state():316] send defer: 4
+2021-09-12 12:55:30,626 DEBUG   HandlerThread:14048 [handler.py:handle_request():126] handle_request: defer
+2021-09-12 12:55:30,626 INFO    HandlerThread:14048 [handler.py:handle_request_defer():143] handle defer: 4
+2021-09-12 12:55:30,626 DEBUG   SenderThread:14048 [sender.py:send_request():196] send_request: defer
+2021-09-12 12:55:30,626 INFO    SenderThread:14048 [sender.py:send_request_defer():312] handle sender defer: 4
+2021-09-12 12:55:30,652 DEBUG   HandlerThread:14048 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-12 12:55:30,886 INFO    Thread-12 :14048 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\wandb-summary.json
+2021-09-12 12:55:30,886 INFO    Thread-12 :14048 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\wandb-metadata.json
+2021-09-12 12:55:30,916 INFO    SenderThread:14048 [sender.py:transition_state():316] send defer: 5
+2021-09-12 12:55:30,916 DEBUG   SenderThread:14048 [sender.py:send_request():196] send_request: poll_exit
+2021-09-12 12:55:30,917 DEBUG   HandlerThread:14048 [handler.py:handle_request():126] handle_request: defer
+2021-09-12 12:55:30,917 INFO    HandlerThread:14048 [handler.py:handle_request_defer():143] handle defer: 5
+2021-09-12 12:55:30,917 DEBUG   SenderThread:14048 [sender.py:send_request():196] send_request: defer
+2021-09-12 12:55:30,917 INFO    SenderThread:14048 [sender.py:send_request_defer():312] handle sender defer: 5
+2021-09-12 12:55:30,917 INFO    SenderThread:14048 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-09-12 12:55:31,171 WARNING MainThread:14048 [internal.py:is_dead():364] Internal process exiting, parent pid 12144 disappeared
+2021-09-12 12:55:31,172 ERROR   MainThread:14048 [internal.py:wandb_internal():141] Internal process shutdown.
+2021-09-12 12:55:31,286 INFO    Thread-29 :14048 [upload_job.py:push():137] Uploaded file C:\Users\alexd\AppData\Local\Temp\tmp6qjoh106wandb\i8tvsme5-wandb-metadata.json
+2021-09-12 12:55:31,322 INFO    Thread-30 :14048 [upload_job.py:push():137] Uploaded file C:\Users\alexd\AppData\Local\Temp\tmp6qjoh106wandb\1zmfj3ux-code/train.py
+2021-09-12 12:55:31,355 INFO    Thread-31 :14048 [upload_job.py:push():137] Uploaded file C:\Users\alexd\AppData\Local\Temp\tmp6qjoh106wandb\21ai3giz-diff.patch
+2021-09-12 12:55:31,637 INFO    WriterThread:14048 [datastore.py:close():281] close: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\run-2nblogfz.wandb
+2021-09-12 12:55:31,888 INFO    SenderThread:14048 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\config.yaml
+2021-09-12 12:55:31,888 INFO    SenderThread:14048 [dir_watcher.py:finish():313] scan: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files
+2021-09-12 12:55:31,888 INFO    SenderThread:14048 [dir_watcher.py:finish():327] scan save: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\conda-environment.yaml conda-environment.yaml
+2021-09-12 12:55:31,889 INFO    SenderThread:14048 [dir_watcher.py:finish():327] scan save: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\config.yaml config.yaml
+2021-09-12 12:55:31,889 INFO    SenderThread:14048 [dir_watcher.py:finish():327] scan save: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\diff.patch diff.patch
+2021-09-12 12:55:31,889 INFO    SenderThread:14048 [dir_watcher.py:finish():327] scan save: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\output.log output.log
+2021-09-12 12:55:31,889 INFO    SenderThread:14048 [dir_watcher.py:finish():327] scan save: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\requirements.txt requirements.txt
+2021-09-12 12:55:31,892 INFO    SenderThread:14048 [dir_watcher.py:finish():327] scan save: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\wandb-metadata.json wandb-metadata.json
+2021-09-12 12:55:31,892 INFO    SenderThread:14048 [dir_watcher.py:finish():327] scan save: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\wandb-summary.json wandb-summary.json
+2021-09-12 12:55:31,898 INFO    SenderThread:14048 [dir_watcher.py:finish():327] scan save: C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\code\train.py code\train.py
+2021-09-12 12:55:31,898 INFO    SenderThread:14048 [sender.py:transition_state():316] send defer: 6
+2021-09-12 12:55:31,898 INFO    SenderThread:14048 [sender.py:finish():979] shutting down sender
+2021-09-12 12:55:31,898 INFO    SenderThread:14048 [file_pusher.py:finish():177] shutting down file pusher
+2021-09-12 12:55:31,898 INFO    SenderThread:14048 [file_pusher.py:join():182] waiting for file pusher
+2021-09-12 12:55:31,899 DEBUG   HandlerThread:14048 [handler.py:handle_request():126] handle_request: defer
+2021-09-12 12:55:31,899 INFO    HandlerThread:14048 [handler.py:handle_request_defer():143] handle defer: 6
+2021-09-12 12:55:31,901 INFO    HandlerThread:14048 [handler.py:finish():683] shutting down handler
+2021-09-12 12:55:32,636 INFO    Thread-34 :14048 [upload_job.py:push():137] Uploaded file C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\requirements.txt
+2021-09-12 12:55:32,646 INFO    Thread-32 :14048 [upload_job.py:push():137] Uploaded file C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\config.yaml
+2021-09-12 12:55:32,648 INFO    Thread-35 :14048 [upload_job.py:push():137] Uploaded file C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\wandb-summary.json
+2021-09-12 12:55:32,650 INFO    Thread-33 :14048 [upload_job.py:push():137] Uploaded file C:\Users\alexd\Documents\AIDLProjects\AIDL_02_NeuralNetworks\Bird-Classification\wandb\run-20210912_125519-2nblogfz\files\output.log
+2021-09-12 12:55:33,116 INFO    MainThread:14048 [internal.py:handle_exit():76] Internal process exited

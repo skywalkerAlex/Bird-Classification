@@ -5,7 +5,6 @@ import os
 from scipy.io import wavfile
 import pandas as pd
 import numpy as np
-from sklearn.utils.class_weight import compute_class_weight
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from models import Conv1D, Conv2D, LSTM
@@ -124,7 +123,7 @@ if __name__ == '__main__':
     parser.add_argument('--model_type', type=str, default='lstm',
                         help='model to run. i.e. conv1d, conv2d, lstm')
     parser.add_argument('--src_root', type=str, default='clean',
-                        help='directory of audio files in total duration')
+                        help='directory of original audio files')
     parser.add_argument('--batch_size', type=int, default=16,
                         help='batch size')
     parser.add_argument('--delta_time', '-dt', type=float, default=1.0,
